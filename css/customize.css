@@ -260,7 +260,7 @@ li.prs_animate_btn1 .button:hover{
 }
 /* 画像を配置しているので、キャプションを手助けする必要がある */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 1rem;
   z-index: 10;
 }
 
@@ -322,6 +322,120 @@ li.prs_animate_btn1 .button:hover{
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;   
 }
+
+#home #myCarousel .carousel-caption .carousel-title {
+  text-align: center;
+  width: 45%;
+  margin-top: -4rem;
+}
+
+#home #myCarousel .carousel-caption .carousel-title h1 {
+  font-size: 11rem;
+  font-weight: 400; 
+}
+
+#home #myCarousel .carousel-caption .carousel-title p {
+  margin-top: -30px;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+#home #myCarousel .carousel-caption .carousel-sub p {
+  font-size: 2rem;
+}
+
+#home #myCarousel .carousel-item > picture > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+/* img要素の配置のために高さを宣言 */
+#home #myCarousel .carousel-item,
+#home #myCarousel .carousel-item > picture > img {
+  height: 35rem;
+}
+
+
+@media (max-width: 576px){
+#home #myCarousel .carousel-caption.text-left {
+  left: 3%;
+  bottom: 9.5rem;
+  right: 11%;
+}
+#home #myCarousel .carousel-caption.text-right {
+  bottom: -1rem;
+  left: -1%;
+}
+#home #myCarousel .carousel-caption .carousel-title {
+  width: 108%;
+  margin-top: -3rem;
+}
+#home #myCarousel .carousel-caption .carousel-title h1 {
+  font-size: 8.5rem;
+}
+#home #myCarousel .carousel-caption .carousel-title p {
+  font-size: 2rem;
+}
+#home #myCarousel .carousel-caption .carousel-sub p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 120%;
+}
+#home #myCarousel .carousel-caption a {
+  padding: 1rem 1rem;
+}
+}
+
+@media (min-width: 768px){
+#home #myCarousel .carousel-caption.text-left .carousel-title h1 {
+  font-size: 10rem;
+}
+#home #myCarousel .carousel-caption.text-left .carousel-title {
+  width: initial;
+}
+
+#home #myCarousel .carousel-caption.text-left {
+  left: -27%;
+  bottom: 4rem;
+}
+#home #myCarousel .carousel-caption.text-left .carousel-title p {
+  font-size: 2.5rem;
+}
+#home #myCarousel .carousel-caption.text-right {
+  right: 5%;
+}
+#home #myCarousel .carousel-caption.text-right .carousel-sub p {
+  font-size: 1.75rem;
+}
+
+}
+
+@media (min-width: 1024px){
+  #home #myCarousel .carousel-caption.text-left .carousel-title h1 {
+    font-size: 12rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title {
+    width: initial;
+  }
+  #home #myCarousel .carousel-caption.text-left {
+    left: -27%;
+    bottom: 1rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title p {
+    font-size: 2.5rem;
+  }
+  #home #myCarousel .carousel-caption.text-right {
+    right: 10%;
+  }
+  #home #myCarousel .carousel-caption.text-right .carousel-sub p {
+    font-size: 2.25rem;
+  }
+  
+  }
+
 
 
 /* マーケティング・コンテンツ
@@ -513,7 +627,7 @@ li.prs_animate_btn1 .button:hover{
 }
 
 .input-group>.form-control {
-  border: initial;
+  /*border: initial;*/
   border-radius: 4px;
 }
 
@@ -538,6 +652,20 @@ li.prs_animate_btn1 .button:hover{
 
 .category-item h6 {
   white-space: initial;
+}
+
+#terms .card {
+  border: none;
+}
+
+#terms .card-header {
+  background-color: initial;
+  border-bottom: 1px dotted rgba(0,0,0,.125);
+}
+
+#terms .card-footer {
+  background-color: initial;
+  border-top: 1px dotted rgba(0,0,0,.125);
 }
 
 /*　フッター
@@ -1462,6 +1590,17 @@ padding-top: 42.13%;
   .eventblock .jumbotron {
     padding: 2rem 2rem;
   }
+}
+
+.plan-2{
+  background-image: url(img/hero.jpg);
+  border-radius: initial;
+  height: 100%;
+  border: 1px solid #fe3f39;
+}
+
+.eventblock .jumbotron.plan-2 {
+  padding: 2rem 1rem;
 }
 
 /*　イベント詳細ページ
