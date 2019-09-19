@@ -77,16 +77,28 @@
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                      preserveAspectRatio="xMidYMid slice"></svg>
-                  <img class="img-fluid" alt="" src="img/hero.jpg">
+                  <!--
+                     <img class="img-fluid" alt="" src="img/hero.jpg">
+                     -->
+                  <!---->
+                  ​<picture>
+                     <source media="(min-width: 576px)" srcset="img/1920_980-hero2.jpg">
+                     <img src="img/720_1240-hero2.jpg" class="" alt="">
+                  </picture>
+
                   <rect fill="#777" width="100%" height="100%" />
                   <div class="container">
-                     <div class="carousel-caption text-left">
-                        <h1>Knock Knock</h1>
-                        <p>久米宏がラジオの次に仕掛けるメディア</p>
-                        <p class="d-none"><a class="btn" href="register.html" role="button">会員登録して動画を投稿する</a>
-                        </p>
+                     <div class="carousel-caption">
+                        <div class="carousel-title">
+                           <img src="img/logo-612x400.png" class="title-logo" alt="">
+                           <div class="carousel-sub">
+                              <p class="main-message">日本と日本人をKnock Knock（ノック ノック）する</p>
+                              <p class="invisible"><a class="btn" href="register.html" role="button">会員登録して動画を投稿する</a>
+                              </p>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>

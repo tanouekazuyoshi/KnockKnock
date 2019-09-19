@@ -29,12 +29,6 @@ body {
   background-color: #fff;
 }
 
-@media (max-width: 1199.98px) and (min-width: 992px){
-.osahan-right-navbar .nav-link {
-    font-size: initial;
-}
-}
-
 .dropdown-toggle::after {
   display: none;
 }
@@ -260,7 +254,7 @@ li.prs_animate_btn1 .button:hover{
 }
 /* 画像を配置しているので、キャプションを手助けする必要がある */
 .carousel-caption {
-  bottom: 1rem;
+  bottom: 2rem;
   z-index: 10;
 }
 
@@ -296,6 +290,10 @@ li.prs_animate_btn1 .button:hover{
 .channel-carousel .carousel-item > img {
   height: 14rem;
 }
+#item1 .channel-carousel .carousel-item > img,
+#item2 .channel-carousel .carousel-item > img {
+  height: 33rem;
+}
 
 #home #myCarousel .carousel-caption a {
   color: #fff;
@@ -325,8 +323,12 @@ li.prs_animate_btn1 .button:hover{
 
 #home #myCarousel .carousel-caption .carousel-title {
   text-align: center;
-  width: 45%;
   margin-top: -4rem;
+}
+
+.title-logo{
+  width: 350px;
+  margin-bottom: 2rem;
 }
 
 #home #myCarousel .carousel-caption .carousel-title h1 {
@@ -335,13 +337,16 @@ li.prs_animate_btn1 .button:hover{
 }
 
 #home #myCarousel .carousel-caption .carousel-title p {
-  margin-top: -30px;
   font-size: 3rem;
-  letter-spacing: 1rem;
+  letter-spacing: 2px;
 }
 
 #home #myCarousel .carousel-caption .carousel-sub p {
   font-size: 2rem;
+}
+
+#home #myCarousel .carousel-caption .carousel-sub p.main-message {
+  text-shadow: 1px 1px 5px #111;
 }
 
 #home #myCarousel .carousel-item > picture > img {
@@ -357,84 +362,6 @@ li.prs_animate_btn1 .button:hover{
 #home #myCarousel .carousel-item > picture > img {
   height: 35rem;
 }
-
-
-@media (max-width: 576px){
-#home #myCarousel .carousel-caption.text-left {
-  left: 3%;
-  bottom: 9.5rem;
-  right: 11%;
-}
-#home #myCarousel .carousel-caption.text-right {
-  bottom: -1rem;
-  left: -1%;
-}
-#home #myCarousel .carousel-caption .carousel-title {
-  width: 108%;
-  margin-top: -3rem;
-}
-#home #myCarousel .carousel-caption .carousel-title h1 {
-  font-size: 8.5rem;
-}
-#home #myCarousel .carousel-caption .carousel-title p {
-  font-size: 2rem;
-}
-#home #myCarousel .carousel-caption .carousel-sub p {
-  font-size: 1.5rem;
-  text-align: center;
-  width: 120%;
-}
-#home #myCarousel .carousel-caption a {
-  padding: 1rem 1rem;
-}
-}
-
-@media (min-width: 768px){
-#home #myCarousel .carousel-caption.text-left .carousel-title h1 {
-  font-size: 10rem;
-}
-#home #myCarousel .carousel-caption.text-left .carousel-title {
-  width: initial;
-}
-
-#home #myCarousel .carousel-caption.text-left {
-  left: -27%;
-  bottom: 4rem;
-}
-#home #myCarousel .carousel-caption.text-left .carousel-title p {
-  font-size: 2.5rem;
-}
-#home #myCarousel .carousel-caption.text-right {
-  right: 5%;
-}
-#home #myCarousel .carousel-caption.text-right .carousel-sub p {
-  font-size: 1.75rem;
-}
-
-}
-
-@media (min-width: 1024px){
-  #home #myCarousel .carousel-caption.text-left .carousel-title h1 {
-    font-size: 12rem;
-  }
-  #home #myCarousel .carousel-caption.text-left .carousel-title {
-    width: initial;
-  }
-  #home #myCarousel .carousel-caption.text-left {
-    left: -27%;
-    bottom: 1rem;
-  }
-  #home #myCarousel .carousel-caption.text-left .carousel-title p {
-    font-size: 2.5rem;
-  }
-  #home #myCarousel .carousel-caption.text-right {
-    right: 10%;
-  }
-  #home #myCarousel .carousel-caption.text-right .carousel-sub p {
-    font-size: 2.25rem;
-  }
-  
-  }
 
 
 
@@ -476,7 +403,7 @@ li.prs_animate_btn1 .button:hover{
 @media (min-width: 40em) {
   /* カルーセルコンテンツのサイズを大きくする */
   .carousel-caption p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
@@ -607,13 +534,14 @@ li.prs_animate_btn1 .button:hover{
 }
 
 .scroll-to-top {
+  z-index: 11;
   background: #fe3f39;
   opacity: 1;
   -webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	transition: all 0.5s;    
+	transition: all 0.5s;
 }
 
 .scroll-to-top:hover {
@@ -1187,12 +1115,6 @@ margin-bottom: 0;
 padding-top: 42.13%;
 }
 
-@media (max-width: 575.98px) {
-.trimming-top {
-  padding-top: 82.13%;
-}
-}
-
 .card .trimming .play-icon {
   z-index: 10;
 }
@@ -1326,8 +1248,6 @@ padding-top: 42.13%;
   bottom: 3rem;
 }
 
-
-
 #item-detail #itemDetailCarousel.carousel {
   margin-bottom: 0rem;
 }
@@ -1383,12 +1303,6 @@ padding-top: 42.13%;
   text-align: center;
   top: 0;
   transition-duration: 0.4s;
-}
-
-@media (max-width: 767px) {
-  .carousel-caption h1 {
-    font-size: 4rem;
-}
 }
 
 
@@ -1577,21 +1491,6 @@ padding-top: 42.13%;
   text-shadow: 1px 1px grey;
 }
 
-@media (max-width: 576px){
-.eventblock .btn-cta{
-  padding: 1rem 2rem;
-}
-.eventblock .jumbotron {
-  padding: 4rem 1rem;
-}
-}
-
-@media (min-width: 768px){
-  .eventblock .jumbotron {
-    padding: 2rem 2rem;
-  }
-}
-
 .plan-2{
   background-image: url(img/hero.jpg);
   border-radius: initial;
@@ -1605,13 +1504,6 @@ padding-top: 42.13%;
 
 /*　イベント詳細ページ
 -------------------------------------------------- */
-@media (max-width: 576px){
-#event .channel-carousel .carousel-item,
-#event .channel-carousel .carousel-item > img {
-  height: 29rem;
-}
-}
-
 #event .item-wrap {
   background-color:whitesmoke;
   margin-top: 5rem;
@@ -1640,4 +1532,138 @@ padding-top: 42.13%;
   left: 0;
   right: 0;
   margin: 0px auto;
+}
+
+
+
+
+/* レスポンシブ　*/
+@media (max-width: 1199.98px) and (min-width: 992px){
+  .osahan-right-navbar .nav-link {
+      font-size: initial;
+  }
+  .prs_animate_btn1{
+    padding-top: .3rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+
+}
+
+@media (max-width: 991px) {
+  .title-logo{
+    width: 280px;
+  }
+}
+
+@media (max-width: 767px){
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px){
+  #event .channel-carousel .carousel-item,
+  #event .channel-carousel .carousel-item > img {
+    height: 29rem;
+  }
+  .eventblock .btn-cta{
+    padding: 1rem 2rem;
+  }
+  .eventblock .jumbotron {
+    padding: 4rem 1rem;
+  }
+  #home #myCarousel .carousel-caption.text-left {
+    left: 3%;
+    bottom: 9.5rem;
+    right: 11%;
+  }
+  #home #myCarousel .carousel-caption.text-right {
+    bottom: -1rem;
+    left: -1%;
+  }
+  #home #myCarousel .carousel-caption .carousel-title {
+    width: 108%;
+    margin-top: -3rem;
+  }
+  #home #myCarousel .carousel-caption .carousel-title h1 {
+    font-size: 8.5rem;
+  }
+  #home #myCarousel .carousel-caption .carousel-title p {
+    font-size: 2rem;
+  }
+  #home #myCarousel .carousel-caption .carousel-sub p {
+
+  }
+  #home #myCarousel .carousel-caption a {
+    padding: 1rem 1rem;
+    font-size: .8rem;
+  }
+  .title-logo {
+    width: 230px;
+  }
+  #home #myCarousel .carousel-caption .carousel-sub p.main-message {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .carousel-caption {
+    left: 11%;
+  }
+}
+@media (max-width: 575.98px) {
+  .trimming-top {
+    padding-top: 82.13%;
+  }
+}
+
+@media (min-width: 768px){
+  .eventblock .jumbotron {
+    padding: 2rem 2rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title h1 {
+    font-size: 10rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title {
+    width: initial;
+  }
+  
+  #home #myCarousel .carousel-caption.text-left {
+    left: -27%;
+    bottom: 4rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title p {
+    font-size: 2.5rem;
+  }
+  #home #myCarousel .carousel-caption.text-right {
+    right: 5%;
+  }
+  #home #myCarousel .carousel-caption.text-right .carousel-sub p {
+    font-size: 1.75rem;
+  }
+  
+}
+
+  
+@media (min-width: 1024px){
+  #home #myCarousel .carousel-caption.text-left .carousel-title h1 {
+    font-size: 12rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title {
+    width: initial;
+  }
+  #home #myCarousel .carousel-caption.text-left {
+    left: -27%;
+    bottom: 1rem;
+  }
+  #home #myCarousel .carousel-caption.text-left .carousel-title p {
+    font-size: 2.5rem;
+  }
+  #home #myCarousel .carousel-caption.text-right {
+    right: 10%;
+  }
+  #home #myCarousel .carousel-caption.text-right .carousel-sub p {
+    font-size: 2.25rem;
+  }
+  
 }
