@@ -422,6 +422,10 @@ li.prs_animate_btn1 .button:hover{
 .carousel-caption h1 {
   color: #fff;
   font-size: 6.5rem;
+  font-family: 'Futura', 'Osaka','Roboto';
+  font-style: italic;
+  letter-spacing: -4px;
+  text-shadow: 1px 1px 5px orange;
 }
 
 #detailpage-top .carousel-caption h1 {
