@@ -1,4 +1,3 @@
-
 /* --　ナビバー　-- */
 
 .osahan-nav {
@@ -476,7 +475,34 @@ li.prs_animate_btn1 .button:hover{
   bottom: -20px;
   left: 0;
 }
+.item1-category2 {
+  margin-top: 100px;
+}
 
+.contact-block {
+  margin-bottom: 5rem;
+}
+.center-main-title h3::before {
+  content: '';
+  border: 2px solid #fe3f39;
+  width: 30px;
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  z-index: 1;
+}
+.center-main-title h3::after {
+  content: '';
+  border: 1px solid #dddddd;
+  width: 170px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
 
 
 /*　サイドバー
@@ -516,7 +542,10 @@ li.prs_animate_btn1 .button:hover{
   position: relative;
   margin-bottom: 1.5rem;
 }
-
+.side-item .item-exp h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
 
 #content-wrapper .side-item .side-item-title h6:before {
   content: '';
@@ -1309,7 +1338,6 @@ padding-top: 42.13%;
   transition-duration: 0.4s;
 }
 
-
 /*　ボタン
 -------------------------------------------------- */
 
@@ -1537,9 +1565,36 @@ padding-top: 42.13%;
   right: 0;
   margin: 0px auto;
 }
-
-
-
+.event-exp img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.event-user-post{
+  margin-bottom: 100px;
+}
+.event-user-post img{
+  width: 100%;
+}
+.event-user-post-title {
+  margin-bottom: 70px;
+}
+.event-user-post-item{
+  margin-bottom: 30px;
+}
+.event-user-post-card:hover .play-icon {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 2px;
+  bottom: 0;
+  color: #fff;
+  font-size: 35px;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition-duration: 0.4s;
+}
 
 /* レスポンシブ　*/
 @media (max-width: 1199.98px) and (min-width: 992px){
@@ -1619,6 +1674,9 @@ padding-top: 42.13%;
   .trimming-top {
     padding-top: 82.13%;
   }
+  .btn-cta {
+    padding: 1rem 3rem;
+}
 }
 
 @media (min-width: 768px){

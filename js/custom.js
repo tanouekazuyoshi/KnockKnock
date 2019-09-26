@@ -98,6 +98,22 @@ Version: 1.0
     event.preventDefault();
   });
 
+  $(function(){
+    $('a.scroll-to-category').click(function() {
+      // スクロールの速度
+      var speed = 1000; // ミリ秒で記述
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - 130;
+      $('body,html').animate({scrollTop:position}, speed, 'easeInOutExpo');
+      return false;
+    });
+  });
+
+
+
+
+
   //realperson js
   $(document).ready(function()	{
     $('#realperson-check').realperson();
