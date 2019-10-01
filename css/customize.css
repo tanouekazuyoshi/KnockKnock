@@ -1489,6 +1489,9 @@ padding-top: 42.13%;
 .single-movie-bottom-wrapper{
   overflow: hidden;
 }
+.video-block .contact-block{
+  margin-bottom: initial;
+}
 
 
 /*　イベントブロック
