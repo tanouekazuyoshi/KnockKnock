@@ -363,7 +363,6 @@ li.prs_animate_btn1 .button:hover{
 }
 
 
-
 /* マーケティング・コンテンツ
 -------------------------------------------------- */
 
@@ -996,6 +995,11 @@ footer p {
   -webkit-line-clamp: 5;
   overflow: hidden;
 }
+.channel-exp h4.card-title {
+  font-family: 'Oswald', 'Osaka', 'Roboto';
+  letter-spacing: 4px;
+}
+
 
 /*　ログイン
 -------------------------------------------------- */
@@ -1610,7 +1614,9 @@ padding-top: 42.13%;
 }
 
 @media (max-width: 991px) and (min-width: 768px){
-
+  h1.channel-title img {
+    width: 70%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1622,6 +1628,9 @@ padding-top: 42.13%;
 @media (max-width: 767px){
   .carousel-caption h1 {
     font-size: 4rem;
+  }
+  h1.channel-title img {
+    width: 100%;
   }
 }
 
