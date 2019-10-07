@@ -363,6 +363,16 @@ li.prs_animate_btn1 .button:hover{
 }
 
 
+.btn-chrome {
+  font-size: 12px;
+  padding: 0;
+}
+#collapseChrome .card {
+  display: block;
+  font-family: 'Roboto';
+  background-color: lightgreen;
+}
+
 /* マーケティング・コンテンツ
 -------------------------------------------------- */
 
